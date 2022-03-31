@@ -1,3 +1,4 @@
+import Layout from '@/components/Layout/Layout'
 import type { NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
@@ -6,7 +7,11 @@ interface StaticProps {
 }
 
 const Home: NextPage = () => {
-  return <></>
+  return (
+    <Layout>
+      <h1>Home</h1>
+    </Layout>
+  )
 }
 
 export async function getStaticProps({ locale }: StaticProps) {
