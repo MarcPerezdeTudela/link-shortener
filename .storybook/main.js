@@ -1,5 +1,4 @@
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
-const path = require('path')
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -21,6 +20,8 @@ module.exports = {
         extensions: config.resolve.extensions,
       }),
     ]
+    config.resolve.fallback = { fs: false, path: false }
+
     return config
   },
 }

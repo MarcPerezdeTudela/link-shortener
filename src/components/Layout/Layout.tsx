@@ -9,12 +9,12 @@ interface Props {
 
 export default function Layout({ children }: Props) {
   return (
-    <div className={styles.layout}>
+    <header className={styles.layout}>
       <div className={styles.navbar}>
         <Header />
       </div>
       <main className={styles.main}>{children}</main>
       <Footer />
-    </div>
+    </header>
   )
 }

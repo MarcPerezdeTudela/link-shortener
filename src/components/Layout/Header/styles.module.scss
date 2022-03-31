@@ -1,0 +1,21 @@
+@import 'styles/theme';
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px;
+  padding-right: 28px;
+}
+
+.logo {
+  position: relative;
+  height: 33px;
+  width: 121px;
+}
+
+.menuIcon {
+  font-size: 32px;
+  color: $grayish-Violet;
+}

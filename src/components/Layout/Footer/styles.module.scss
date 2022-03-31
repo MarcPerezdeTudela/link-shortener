@@ -1,0 +1,51 @@
+@import 'styles/theme';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: $very-dark-blue;
+}
+.logo {
+  position: relative;
+  height: 33px;
+  width: 121px;
+}
+
+.socialMediaContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.socialMediaIcon {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+.linkList {
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+.linkSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.linkTitle {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+.link {
+  text-decoration: none;
+  color: $gray;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
