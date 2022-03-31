@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from './Footer/Footer'
-import Header from './Header/Header'
+import Footer from '@/components/Layout/Footer/Footer'
+import Header from '@/components/Layout/Header/Header'
 import styles from './styles.module.scss'
 
 interface Props {
