@@ -1,3 +1,4 @@
+import HeroSection from '@/components/HeroSection/HeroSection'
 import Layout from '@/components/Layout/Layout'
 import type { NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -9,7 +10,7 @@ interface StaticProps {
 const Home: NextPage = () => {
   return (
     <Layout>
-      <h1>Home</h1>
+      <HeroSection />
     </Layout>
   )
 }
