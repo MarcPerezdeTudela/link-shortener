@@ -1,0 +1,39 @@
+@import 'styles/theme';
+
+.container {
+  background-color: $darkViolet;
+  background-image: url('/assets/bg-shorten-mobile.svg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 28px;
+  border-radius: 8px;
+}
+
+.input {
+  color: $gray;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.input:focus {
+  outline-color: $cyan;
+}
+
+.button {
+  height: 50px;
+  background-color: $cyan;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  margin-top: 28px;
+  padding: 0px 18px 0px 18px;
+  border-radius: 8px;
+}

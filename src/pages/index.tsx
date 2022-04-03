@@ -1,8 +1,10 @@
 import HeroSection from '@/components/HeroSection/HeroSection'
 import Layout from '@/components/Layout/Layout'
+import LinkSection from '@/components/LinkSection/LinkSection'
 import type { NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
+import styles from '@/styles/pageStyles/index.module.scss'
 interface StaticProps {
   locale: string
 }
@@ -10,7 +12,10 @@ interface StaticProps {
 const Home: NextPage = () => {
   return (
     <Layout>
-      <HeroSection />
+      <div className={styles.heroSection}>
+        <HeroSection />
+      </div>
+      <LinkSection />
     </Layout>
   )
 }
