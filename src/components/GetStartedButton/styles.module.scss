@@ -1,0 +1,11 @@
+@import 'styles/theme';
+
+.button {
+  background-color: $cyan;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  padding: 12px 46px 12px 46px;
+  border-radius: 9999px;
+}

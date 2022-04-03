@@ -1,0 +1,15 @@
+@import 'styles/theme';
+
+.container {
+  background-color: $darkViolet;
+  background-image: url('/assets/bg-boost-mobile.svg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 14px 96px 14px;
+}
+
+.title {
+  color: white;
+}

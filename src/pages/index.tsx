@@ -5,6 +5,7 @@ import type { NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import styles from '@/styles/pageStyles/index.module.scss'
+import BoostLinksSection from '@/components/BoostLinksSection/BoostLinksSection'
 interface StaticProps {
   locale: string
 }
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <HeroSection />
       </div>
       <LinkSection />
+      <BoostLinksSection />
     </Layout>
   )
 }
