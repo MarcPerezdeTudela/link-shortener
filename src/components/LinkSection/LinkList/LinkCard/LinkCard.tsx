@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import React from 'react'
+import useCopy from 'use-copy'
 import styles from './styles.module.scss'
 
 interface Props {
@@ -8,6 +9,13 @@ interface Props {
 }
 export default function LinkCard({ originalLink, shortedLink }: Props) {
   const { t } = useTranslation()
+  const [copied, copy, setCopied] = useCopy(shortedLink)
+  const handleClick = () => {
+    copy()
+    setTimeout(() => {
+      setCopied(false)
+    }, 3000)
+  }
 
   return (
     <div className={styles.container}>
@@ -28,10 +36,10 @@ export default function LinkCard({ originalLink, shortedLink }: Props) {
         {shortedLink}
       </a>
       <button
-        className={styles.button}
-        onClick={() => navigator.clipboard.writeText(shortedLink)}
+        className={`${styles.button} ${copied ? styles.copied : ''}`}
+        onClick={handleClick}
       >
-        {t('copy')}
+        {copied ? t('copied') : t('copy')}
       </button>
     </div>
   )

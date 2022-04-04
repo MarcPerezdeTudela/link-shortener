@@ -3,5 +3,7 @@
   "heroText": "  Build your brand's recognition and get detailed insights on how your links are performing",
   "getStarted": "Get Started",
   "shortenIt": "Shorten It!",
-  "copy": "Copy"
+  "shortenLinkPlaceholder": "Shorten a link here...",
+  "copy": "Copy",
+  "copied": "Copied!"
 }

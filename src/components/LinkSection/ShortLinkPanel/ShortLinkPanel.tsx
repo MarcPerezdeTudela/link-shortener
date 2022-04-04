@@ -27,7 +27,7 @@ export default function ShortLinkPanel() {
       <input
         onInput={handleInput}
         className={styles.input}
-        placeholder="Shorten a link here..."
+        placeholder={t('shortenLinkPlaceholder')}
         type="text"
       />
       <button type="submit" className={styles.button}>
