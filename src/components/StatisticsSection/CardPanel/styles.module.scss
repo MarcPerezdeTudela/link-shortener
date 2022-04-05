@@ -1,0 +1,12 @@
+@import 'styles/theme';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.separator {
+  background-color: $cyan;
+  width: 8px;
+  height: 85px;
+}

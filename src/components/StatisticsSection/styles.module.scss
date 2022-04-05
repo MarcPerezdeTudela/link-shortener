@@ -1,0 +1,23 @@
+@import 'styles/theme';
+
+.container {
+  background-color: $very-light-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 22px 64px 22px;
+}
+.title {
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 8px;
+}
+.text {
+  color: $gray;
+  text-align: center;
+  line-height: 1.8rem;
+}
+.cardPanel {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
