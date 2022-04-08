@@ -5,7 +5,6 @@
   background-image: url('/assets/bg-shorten-mobile.svg');
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   justify-content: center;
   padding: 28px;
@@ -13,16 +12,26 @@
 }
 
 .input {
+  font-size: 18px;
   color: $gray;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 4px;
   border: none;
   height: 50px;
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.errorInput::placeholder {
+  color: $red !important;
+}
+
+.errorInput:focus {
+  outline: 3px solid $red !important;
+}
+
 .input:focus {
-  outline-color: $cyan;
+  outline: 3px solid $cyan;
 }
 
 .button {
@@ -33,7 +42,19 @@
   font-weight: 700;
   font-size: 18px;
   border: none;
-  margin-top: 28px;
+  margin-top: 14px;
   padding: 0px 18px 0px 18px;
   border-radius: 8px;
+}
+
+.errorMessage {
+  display: none;
+  margin-top: 8px;
+  color: $red;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.show {
+  display: block;
 }

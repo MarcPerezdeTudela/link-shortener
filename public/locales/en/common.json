@@ -13,5 +13,6 @@
   "detailedRecordsTitle": "Detailed Records",
   "detailedRecordsText": "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.",
   "fullyCustomizableTitle": "Fully Customizable",
-  "fullyCustomizableText": "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
+  "fullyCustomizableText": "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
+  "invalidURL": "Please add a link"
 }
