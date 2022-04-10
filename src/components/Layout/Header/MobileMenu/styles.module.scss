@@ -1,0 +1,56 @@
+@import 'styles/theme';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 370px;
+  width: 90%;
+  background-color: $darkViolet;
+  top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.itemList {
+  li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  margin: 0;
+  padding: 8px 32px 8px 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.item {
+  color: white;
+  width: 100%;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: $very-light-gray;
+  opacity: 0.2;
+}
+
+.signUp {
+  background-color: $cyan;
+  border-radius: 32px;
+  padding: 11px 0px 11px 0px;
+}
