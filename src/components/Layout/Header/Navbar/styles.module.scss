@@ -1,0 +1,40 @@
+@import 'styles/theme';
+
+.container {
+  padding: 8px 86px 8px 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.leftLinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  align-items: center;
+}
+.rightLinks {
+  display: flex;
+  gap: 55px;
+  justify-content: flex-end;
+  width: 60%;
+  align-items: center;
+}
+
+.signUp {
+  text-decoration: none;
+  color: white;
+  padding: 10px 26px 10px 26px;
+  background-color: $cyan;
+  border-radius: 50px;
+}
+.signUp:hover {
+  background-color: $light-cyan;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: $gray;
+}
+.link:hover {
+  color: black;
+}
