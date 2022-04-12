@@ -1,4 +1,5 @@
 @import 'styles/theme';
+@import 'styles/breakpoints';
 
 .container {
   overflow: hidden;
@@ -36,4 +37,30 @@
 
 .button {
   margin-top: 16px;
+}
+
+@include breakpoint(large-desktop) {
+  .container {
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 0 5vw 0 5vw;
+  }
+  .body {
+    align-items: flex-start;
+  }
+  .title {
+    max-width: 600px;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: start;
+  }
+  .text {
+    line-height: 32px;
+    text-align: start;
+  }
+  .image {
+    width: 50%;
+    min-width: 540px;
+    height: 480px;
+  }
 }

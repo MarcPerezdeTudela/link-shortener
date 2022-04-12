@@ -15,86 +15,88 @@ export default function Footer() {
 
   return (
     <footer className={styles.container}>
-      <div className={styles.logo}>
-        <Image layout="fill" objectFit="contain" alt="logo" src={Logo} />
-      </div>
-
-      <div className={styles.linkList}>
-        <div className={styles.linkSection}>
-          <p className={styles.linkTitle}>{t('features')}</p>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('linkShortening')}</a>
-          </Link>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('brandedLinks')}</a>
-          </Link>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('analytics')}</a>
-          </Link>
+      <div className={styles.content}>
+        <div className={styles.logo}>
+          <Image layout="fill" objectFit="contain" alt="logo" src={Logo} />
         </div>
 
-        <div className={styles.linkSection}>
-          <p className={styles.linkTitle}>{t('resources')}</p>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('blog')}</a>
-          </Link>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('developers')}</a>
-          </Link>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('support')}</a>
-          </Link>
+        <div className={styles.linkList}>
+          <div className={styles.linkSection}>
+            <p className={styles.linkTitle}>{t('features')}</p>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('linkShortening')}</a>
+            </Link>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('brandedLinks')}</a>
+            </Link>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('analytics')}</a>
+            </Link>
+          </div>
+
+          <div className={styles.linkSection}>
+            <p className={styles.linkTitle}>{t('resources')}</p>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('blog')}</a>
+            </Link>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('developers')}</a>
+            </Link>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('support')}</a>
+            </Link>
+          </div>
+
+          <div className={styles.linkSection}>
+            <p className={styles.linkTitle}>{t('company')}</p>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('about')}</a>
+            </Link>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('ourTeam')}</a>
+            </Link>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('careers')}</a>
+            </Link>
+            <Link href={'/'}>
+              <a className={styles.link}>{t('careers')}</a>
+            </Link>
+          </div>
         </div>
 
-        <div className={styles.linkSection}>
-          <p className={styles.linkTitle}>{t('company')}</p>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('about')}</a>
-          </Link>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('ourTeam')}</a>
-          </Link>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('careers')}</a>
-          </Link>
-          <Link href={'/'}>
-            <a className={styles.link}>{t('careers')}</a>
-          </Link>
-        </div>
-      </div>
-
-      <div className={styles.socialMediaContainer}>
-        <div className={styles.socialMediaIcon}>
-          <Image
-            layout="fill"
-            objectFit="contain"
-            src={FacebookIcon}
-            alt="facebook"
-          />
-        </div>
-        <div className={styles.socialMediaIcon}>
-          <Image
-            layout="fill"
-            objectFit="contain"
-            src={TwitterIcon}
-            alt="twitter"
-          />
-        </div>
-        <div className={styles.socialMediaIcon}>
-          <Image
-            layout="fill"
-            objectFit="contain"
-            src={PinterestIcon}
-            alt="pinterest"
-          />
-        </div>
-        <div className={styles.socialMediaIcon}>
-          <Image
-            layout="fill"
-            objectFit="contain"
-            src={InstagramIcon}
-            alt="instagram"
-          />
+        <div className={styles.socialMediaContainer}>
+          <div className={styles.socialMediaIcon}>
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src={FacebookIcon}
+              alt="facebook"
+            />
+          </div>
+          <div className={styles.socialMediaIcon}>
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src={TwitterIcon}
+              alt="twitter"
+            />
+          </div>
+          <div className={styles.socialMediaIcon}>
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src={PinterestIcon}
+              alt="pinterest"
+            />
+          </div>
+          <div className={styles.socialMediaIcon}>
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src={InstagramIcon}
+              alt="instagram"
+            />
+          </div>
         </div>
       </div>
     </footer>

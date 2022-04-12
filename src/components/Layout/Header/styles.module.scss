@@ -1,4 +1,5 @@
 @import 'styles/theme';
+@import 'styles/breakpoints';
 
 .container {
   display: flex;
@@ -16,6 +17,32 @@
 }
 
 .menuIcon {
+  padding: 8px;
   font-size: 32px;
   color: $grayish-Violet;
+}
+
+.navbar {
+  display: none;
+  flex-grow: 1;
+}
+
+@include breakpoint(tablet) {
+  .container {
+    padding: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@include breakpoint(large-desktop) {
+  .container {
+    padding: 32px 64px 32px 128px;
+  }
+  .menuIcon {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
 }

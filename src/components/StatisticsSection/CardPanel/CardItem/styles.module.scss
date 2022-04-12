@@ -1,4 +1,5 @@
 @import 'styles/theme';
+@import 'styles/breakpoints';
 
 .container {
   display: flex;
@@ -30,4 +31,25 @@
   line-height: 1.5rem;
   font-size: 16px;
   text-align: center;
+}
+
+@include breakpoint(tablet) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@include breakpoint(large-desktop) {
+  .container {
+    position: relative;
+    justify-content: center;
+    width: 340px;
+    height: 300px;
+  }
+
+  .cardImage {
+    position: absolute;
+    left: 34px;
+    top: -42px;
+  }
 }

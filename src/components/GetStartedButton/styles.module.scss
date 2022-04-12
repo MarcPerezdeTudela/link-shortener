@@ -9,3 +9,7 @@
   padding: 12px 46px 12px 46px;
   border-radius: 9999px;
 }
+.button:hover {
+  background-color: $light-cyan;
+  cursor: pointer;
+}

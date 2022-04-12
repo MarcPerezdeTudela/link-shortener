@@ -1,3 +1,10 @@
+@import 'styles/breakpoints';
+
 .heroSection {
   padding-bottom: 80px;
+}
+@include breakpoint(large-desktop) {
+  .heroSection {
+    padding-bottom: 200px;
+  }
 }

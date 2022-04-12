@@ -1,3 +1,5 @@
+@import 'styles/breakpoints';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -12,4 +14,18 @@
   margin-top: 16px;
   margin-bottom: 16px;
   list-style-type: none;
+}
+
+@include breakpoint(tablet) {
+  .container {
+    width: 65%;
+    max-width: 550px;
+  }
+}
+
+@include breakpoint(large-desktop) {
+  .container {
+    width: 85%;
+    max-width: 1200px;
+  }
 }

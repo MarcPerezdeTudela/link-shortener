@@ -1,4 +1,5 @@
 @import '/styles/theme.scss';
+@import '/styles/breakpoints.scss';
 
 .container {
   display: flex;
@@ -40,4 +41,29 @@
 
 .copied {
   background-color: $darkViolet !important;
+}
+
+@include breakpoint(large-desktop) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .originalLink {
+    padding: 0;
+    border: none;
+  }
+  .shortedLink {
+    text-align: right;
+    flex-grow: 1;
+    justify-self: end;
+    padding-right: 25px;
+  }
+  .button {
+    width: 10%;
+  }
+  .button:hover {
+    cursor: pointer;
+    background-color: $light-cyan;
+  }
 }

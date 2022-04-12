@@ -1,4 +1,5 @@
 @import 'styles/theme';
+@import 'styles/breakpoints';
 
 .container {
   background-color: $very-light-gray;
@@ -20,4 +21,11 @@
 .cardPanel {
   margin-top: 50px;
   margin-bottom: 30px;
+}
+
+@include breakpoint(tablet) {
+  .text {
+    width: 65%;
+    max-width: 550px;
+  }
 }

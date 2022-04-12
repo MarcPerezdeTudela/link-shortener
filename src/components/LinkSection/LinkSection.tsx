@@ -8,8 +8,12 @@ export default function LinkSection() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <ShortLinkPanel />
-        <LinkList />
+        <div className={styles.linkPanel}>
+          <ShortLinkPanel />
+        </div>
+        <div className={styles.linkList}>
+          <LinkList />
+        </div>
       </div>
     </div>
   )

@@ -6,6 +6,7 @@ import styles from './styles.module.scss'
 import Logo from '@/assets/logo.svg'
 import MobileMenu from './MobileMenu/MobileMenu'
 import useOnClickOutside from '@/hooks/useOnClickOutside'
+import Navbar from './Navbar/Navbar'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,6 +17,9 @@ export default function Header() {
     <div className={styles.container}>
       <div className={styles.logo}>
         <Image layout="fill" objectFit="cover" alt={'logo'} src={Logo} />
+      </div>
+      <div className={styles.navbar}>
+        <Navbar />
       </div>
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}

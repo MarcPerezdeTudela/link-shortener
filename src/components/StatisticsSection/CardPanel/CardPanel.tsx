@@ -11,23 +11,29 @@ export default function CardPanel() {
 
   return (
     <div className={styles.container}>
-      <CardItem
-        title={t('brandRecognitionTitle')}
-        text={t('brandRecognitionText')}
-        cardImage={brandImage}
-      />
+      <div className={styles.brandRecognition}>
+        <CardItem
+          title={t('brandRecognitionTitle')}
+          text={t('brandRecognitionText')}
+          cardImage={brandImage}
+        />
+      </div>
       <div className={styles.separator} />
-      <CardItem
-        title={t('detailedRecordsTitle')}
-        text={t('detailedRecordsText')}
-        cardImage={detailedImage}
-      />
+      <div className={styles.detailedRecords}>
+        <CardItem
+          title={t('detailedRecordsTitle')}
+          text={t('detailedRecordsText')}
+          cardImage={detailedImage}
+        />
+      </div>
       <div className={styles.separator} />
-      <CardItem
-        title={t('fullyCustomizableTitle')}
-        text={t('fullyCustomizableText')}
-        cardImage={fullyCustomizableImage}
-      />
+      <div className={styles.fullyCustomizable}>
+        <CardItem
+          title={t('fullyCustomizableTitle')}
+          text={t('fullyCustomizableText')}
+          cardImage={fullyCustomizableImage}
+        />
+      </div>
     </div>
   )
 }

@@ -1,8 +1,11 @@
 @import 'styles/theme';
+@import 'styles/breakpoints';
 
 .container {
   background-color: $darkViolet;
   background-image: url('/assets/bg-boost-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,4 +16,10 @@
 .title {
   text-align: center;
   color: white;
+}
+
+@include breakpoint(tablet) {
+  .container {
+    background-image: url('/assets/bg-boost-desktop.svg');
+  }
 }

@@ -1,12 +1,19 @@
 @import 'styles/theme';
+@import 'styles/breakpoints';
 
 .container {
+  display: flex;
+  justify-content: center;
+  background-color: $very-dark-violet;
+}
+.content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 48px;
   padding-bottom: 48px;
-  background-color: $very-dark-violet;
+  max-width: 1000px;
 }
 .logo {
   position: relative;
@@ -43,9 +50,57 @@
   font-weight: 700;
 }
 .link {
+  text-align: center;
   text-decoration: none;
   color: $gray;
   font-size: 14px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+@include breakpoint(tablet) {
+  .socialMediaContainer {
+    max-width: 350px;
+  }
+}
+@include breakpoint(small-desktop) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .link:hover {
+    color: $cyan;
+  }
+  .socialMediaIcon:hover {
+    filter: invert(66%) sepia(51%) saturate(621%) hue-rotate(130deg)
+      brightness(170%) contrast(87%);
+  }
+
+  .linkList {
+    padding-left: 36px;
+    padding-right: 36px;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 300px;
+  }
+
+  .linkSection {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .socialMediaContainer {
+    align-self: flex-start;
+    padding-top: 30px;
+    max-width: 180px;
+  }
+  .logo {
+    bottom: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 43px;
+    width: 201px;
+  }
 }
